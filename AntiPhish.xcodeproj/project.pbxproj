@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA0CD21C1A2160A9009E5A1C /* ScanResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0CD21B1A2160A9009E5A1C /* ScanResults.swift */; };
 		BA3562AD1A21AE45001D1193 /* apiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3562AC1A21AE45001D1193 /* apiKeys.swift */; };
+		BA3562AF1A21B69D001D1193 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3562AE1A21B69D001D1193 /* SwiftyJSON.swift */; };
 		BA51A8621A146642003C6A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA51A8611A146642003C6A34 /* AppDelegate.swift */; };
 		BA51A8641A146642003C6A34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA51A8631A146642003C6A34 /* ViewController.swift */; };
 		BA51A8671A146642003C6A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA51A8651A146642003C6A34 /* Main.storyboard */; };
@@ -102,6 +103,7 @@
 /* Begin PBXFileReference section */
 		BA0CD21B1A2160A9009E5A1C /* ScanResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanResults.swift; sourceTree = "<group>"; };
 		BA3562AC1A21AE45001D1193 /* apiKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = apiKeys.swift; sourceTree = "<group>"; };
+		BA3562AE1A21B69D001D1193 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		BA51A85C1A146642003C6A34 /* AntiPhish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AntiPhish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA51A8601A146642003C6A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA51A8611A146642003C6A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 		BA51A85E1A146642003C6A34 /* AntiPhish */ = {
 			isa = PBXGroup;
 			children = (
+				BA3562AE1A21B69D001D1193 /* SwiftyJSON.swift */,
 				BAE17DB31A21A5B700907A01 /* apikeys.plist */,
 				BAE17D9F1A21738F00907A01 /* Alamofire.playground */,
 				BA51A8611A146642003C6A34 /* AppDelegate.swift */,
@@ -378,6 +381,7 @@
 				BA0CD21C1A2160A9009E5A1C /* ScanResults.swift in Sources */,
 				BA51A8641A146642003C6A34 /* ViewController.swift in Sources */,
 				BA3562AD1A21AE45001D1193 /* apiKeys.swift in Sources */,
+				BA3562AF1A21B69D001D1193 /* SwiftyJSON.swift in Sources */,
 				BA51A8621A146642003C6A34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
