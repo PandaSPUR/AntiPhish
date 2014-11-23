@@ -1,3 +1,6 @@
 [submodule "AntiPhish/Alamofire"]
 	path = AntiPhish/Alamofire
 	url = https://github.com/Alamofire/Alamofire.git
+[submodule "AntiPhish/SwiftyJSON"]
+	path = AntiPhish/SwiftyJSON
+	url = https://github.com/SwiftyJSON/SwiftyJSON.git
