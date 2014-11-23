@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 private let _ScanResultsSharedInstance = ScanResults()
 
@@ -14,4 +15,12 @@ class ScanResults {
     class var sharedInstance : ScanResults {
         return _ScanResultsSharedInstance
     }
+}
+
+struct googleResult {
+    
+}
+
+struct vtResult {
+    var json : JSON
 }
