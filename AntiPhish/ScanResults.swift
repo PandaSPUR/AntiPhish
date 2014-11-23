@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+private let _ScanResultsSharedInstance = ScanResults()
+
+class ScanResults {
+    class var sharedInstance : ScanResults {
+        return _ScanResultsSharedInstance
+    }
+}
