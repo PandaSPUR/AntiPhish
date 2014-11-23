@@ -1,0 +1,3 @@
+[submodule "AntiPhish/Alamofire"]
+	path = AntiPhish/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
