@@ -22,5 +22,5 @@ struct googleResult {
 }
 
 struct vtResult {
-    var json : JSON
+    //let jsonObj: JSON?
 }
