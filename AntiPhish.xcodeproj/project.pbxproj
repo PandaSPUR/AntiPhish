@@ -15,6 +15,7 @@
 		BA51A8671A146642003C6A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA51A8651A146642003C6A34 /* Main.storyboard */; };
 		BA51A8691A146643003C6A34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA51A8681A146643003C6A34 /* Images.xcassets */; };
 		BA51A8751A146643003C6A34 /* AntiPhishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA51A8741A146643003C6A34 /* AntiPhishTests.swift */; };
+		BA52DC8A1A21B9A200F77EA7 /* Scanners.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52DC891A21B9A200F77EA7 /* Scanners.swift */; };
 		BAE17D9E1A2172BA00907A01 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA59BBE71A146E6100D217D9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BAE17DB11A21979E00907A01 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BAE17DA81A21976700907A01 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BAE17DB41A21A5B700907A01 /* apikeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAE17DB31A21A5B700907A01 /* apikeys.plist */; };
@@ -113,8 +114,9 @@
 		BA51A86E1A146643003C6A34 /* AntiPhishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntiPhishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA51A8731A146643003C6A34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA51A8741A146643003C6A34 /* AntiPhishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntiPhishTests.swift; sourceTree = "<group>"; };
+		BA52DC881A21B8F800F77EA7 /* Alamofire.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Alamofire.playground; sourceTree = "<group>"; };
+		BA52DC891A21B9A200F77EA7 /* Scanners.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scanners.swift; sourceTree = "<group>"; };
 		BA59BBE11A146E6100D217D9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = AntiPhish/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		BAE17D9F1A21738F00907A01 /* Alamofire.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Alamofire.playground; sourceTree = "<group>"; };
 		BAE17DA01A21976700907A01 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = AntiPhish/SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
 		BAE17DB31A21A5B700907A01 /* apikeys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apikeys.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,16 +162,17 @@
 		BA51A85E1A146642003C6A34 /* AntiPhish */ = {
 			isa = PBXGroup;
 			children = (
-				BA3562AE1A21B69D001D1193 /* SwiftyJSON.swift */,
-				BAE17DB31A21A5B700907A01 /* apikeys.plist */,
-				BAE17D9F1A21738F00907A01 /* Alamofire.playground */,
-				BA51A8611A146642003C6A34 /* AppDelegate.swift */,
+				BA52DC881A21B8F800F77EA7 /* Alamofire.playground */,
+				BA52DC891A21B9A200F77EA7 /* Scanners.swift */,
+				BA0CD21B1A2160A9009E5A1C /* ScanResults.swift */,
+				BA3562AC1A21AE45001D1193 /* apiKeys.swift */,
 				BA51A8631A146642003C6A34 /* ViewController.swift */,
 				BA51A8651A146642003C6A34 /* Main.storyboard */,
 				BA51A8681A146643003C6A34 /* Images.xcassets */,
+				BAE17DB31A21A5B700907A01 /* apikeys.plist */,
+				BA51A8611A146642003C6A34 /* AppDelegate.swift */,
+				BA3562AE1A21B69D001D1193 /* SwiftyJSON.swift */,
 				BA51A85F1A146642003C6A34 /* Supporting Files */,
-				BA0CD21B1A2160A9009E5A1C /* ScanResults.swift */,
-				BA3562AC1A21AE45001D1193 /* apiKeys.swift */,
 			);
 			path = AntiPhish;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				BA51A8641A146642003C6A34 /* ViewController.swift in Sources */,
 				BA3562AD1A21AE45001D1193 /* apiKeys.swift in Sources */,
 				BA3562AF1A21B69D001D1193 /* SwiftyJSON.swift in Sources */,
+				BA52DC8A1A21B9A200F77EA7 /* Scanners.swift in Sources */,
 				BA51A8621A146642003C6A34 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

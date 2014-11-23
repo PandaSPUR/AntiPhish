@@ -18,9 +18,18 @@ class ScanResults {
 }
 
 struct googleResult {
+    var responseCode: Int //200 (bad site, check response), 204 (good), else (error)
+    var responseCodeString: String
+    var responseBody: String //"phishing" "malware" or "phishing,malware"
+}
+
+struct virustotalResult {
+    var jsonObj: JSON //store the whole thing, just in case
+    var positives: Int //"positives" = how many scanners had a hit.
+    var total: Int //total scanners
     
 }
 
-struct vtResult {
-    let jsonObj: JSON?
+struct metascanResult {
+    
 }
