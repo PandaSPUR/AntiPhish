@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        urlInput.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBOutlet var urlInput: UISearchBar!
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        self.performSegueWithIdentifier("gotoScan", sender: self)
+    }
 }
 

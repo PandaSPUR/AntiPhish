@@ -35,6 +35,12 @@
                                     <navigationItem title="AntiPhish" id="fxD-Vz-b2G"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5FM-RU-uOn">
+                                <rect key="frame" x="277" y="322" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <searchBar contentMode="redraw" barStyle="black" placeholder="Enter a link..." translucent="NO" backgroundImage="Foreground_Light" translatesAutoresizingMaskIntoConstraints="NO" id="NrC-Lo-ACm">
                                 <rect key="frame" x="0.0" y="278" width="600" height="44"/>
                                 <color key="barTintColor" red="0.14623999600000001" green="0.1462444067" blue="0.14624202250000001" alpha="1" colorSpace="deviceRGB"/>
@@ -56,6 +62,10 @@
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="urlInput" destination="NrC-Lo-ACm" id="UW6-Lk-t7o"/>
+                        <segue destination="wW7-T4-GfP" kind="custom" identifier="gotoScan" id="EOJ-vw-jte"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
