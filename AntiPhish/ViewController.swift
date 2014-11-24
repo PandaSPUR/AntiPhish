@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UISearchBarDelegate {
-                            
+    @IBOutlet var urlInput: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         urlInput.delegate = self
@@ -20,10 +21,15 @@ class ViewController: UIViewController, UISearchBarDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBOutlet var urlInput: UISearchBar!
-    
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         self.performSegueWithIdentifier("gotoScan", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "gotoScan"{
+            let vc = segue.destinationViewController as ScanViewController
+            vc.urlInput = urlInput.text
+        }
     }
 }
 

@@ -25,7 +25,7 @@
                   symbolName = "AntiPhish.ScanResults.deinit"
                   moduleName = "AntiPhish"
                   urlString = "file:///Users/panda/Desktop/CS395/AntiPhish/AntiPhish/ScanResults.swift"
-                  timestampString = "438483560.389206"
+                  timestampString = "438497251.154261"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -39,7 +39,7 @@
                   symbolName = "AntiPhish.ScanResults.__deallocating_deinit"
                   moduleName = "AntiPhish"
                   urlString = "file:///Users/panda/Desktop/CS395/AntiPhish/AntiPhish/ScanResults.swift"
-                  timestampString = "438483560.389853"
+                  timestampString = "438497251.154501"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -86,11 +86,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntiPhish/ViewController.swift"
-            timestampString = "438483517.527274"
+            timestampString = "438497250.823832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -102,13 +102,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AntiPhish/ViewController.swift"
-            timestampString = "438483519.287398"
+            timestampString = "438497250.823832"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AntiPhish/ScanViewController.swift"
+            timestampString = "438496989.774559"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ScanViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AntiPhish.ScanViewController.__deallocating_deinit"
+                  moduleName = "AntiPhish"
+                  urlString = "file:///Users/panda/Desktop/CS395/AntiPhish/AntiPhish/ScanViewController.swift"
+                  timestampString = "438497251.165594"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc AntiPhish.ScanViewController.__ivar_destroyer"
+                  moduleName = "AntiPhish"
+                  urlString = "file:///Users/panda/Desktop/CS395/AntiPhish/AntiPhish/ScanViewController.swift"
+                  timestampString = "438497251.166254"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "15">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
