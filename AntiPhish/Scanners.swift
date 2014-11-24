@@ -18,13 +18,14 @@ func escapeURL(url: String) -> String{
 func expandURL(url: String) {
     var resultContainer = ScanResults.sharedInstance
     var longURL = "http://api.longurl.org/v2/expand?format=json&url=\(url)"
-    
     Alamofire.request(.GET, longURL)
         .responseJSON{ (request, response, string, error) in
             resultContainer.longurl.responseCode = response!.statusCode
             if response!.statusCode == 200 {
                 resultContainer.longurl.url = string!["long-url"] as NSString
             }
+            
+            NSNotificationCenter.defaultCenter().postNotificationName("responseReceived", object: nil)
     }
 }
 
@@ -42,6 +43,8 @@ func googleScan(url: String) {
         .responseString { (request, response, string, error) in
             resultContainer.google.responseCode = response!.statusCode
             resultContainer.google.responseBody = string!
+            
+            NSNotificationCenter.defaultCenter().postNotificationName("responseReceived", object: nil)
     }
 }
 
@@ -73,5 +76,6 @@ func vtScan(url: String) {
             
             resultContainer.vt.phishing = phishingCount
             resultContainer.vt.malware = malwareCount
+            NSNotificationCenter.defaultCenter().postNotificationName("responseReceived", object: nil)
     }
 }
