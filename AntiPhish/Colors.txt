@@ -1,0 +1,15 @@
+App Background:
+	Device RGB: 65 65 68
+	Generic RGB: 50 50 52
+
+Item Background:
+	Device RGB: 37 37 37
+	Generic RGB: 28 28 28
+
+Item Foreground:
+	Device RGB: 24 24 24
+	Generic RGB: 19 19 19
+
+Green:
+	Device RGB: 28 200 119
+	Generic RGB: 34 192 100
