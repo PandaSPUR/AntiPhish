@@ -11,6 +11,10 @@ import UIKit
 class ViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet var urlInput: UISearchBar!
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         urlInput.delegate = self

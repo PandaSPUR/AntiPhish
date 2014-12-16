@@ -15,6 +15,18 @@ func escapeURL(url: String) -> String{
     return(escapedURL)
 }
 
+func checkURL(url: String) {
+    var resultContainer = ScanResults.sharedInstance
+    Alamofire.request(.GET, url)
+        .responseJSON{ (request, response, string, error) in
+            if response!.statusCode == 200 {
+                resultContainer.check.alive = true
+            }
+            
+            NSNotificationCenter.defaultCenter().postNotificationName("responseReceived", object: nil)
+    }
+}
+
 func expandURL(url: String) {
     var resultContainer = ScanResults.sharedInstance
     var longURL = "http://api.longurl.org/v2/expand?format=json&url=\(url)"
@@ -76,6 +88,32 @@ func vtScan(url: String) {
             
             resultContainer.vt.phishing = phishingCount
             resultContainer.vt.malware = malwareCount
+            NSNotificationCenter.defaultCenter().postNotificationName("responseReceived", object: nil)
+    }
+}
+
+func metaScan(url: String) {
+    var metaAPIKey = apiKeyContainer.sharedInstance.metascan
+    var resultContainer = ScanResults.sharedInstance
+    
+    var metascanHeaders = Alamofire.Manager.sharedInstance.session.configuration.HTTPAdditionalHeaders ?? [:]
+    metascanHeaders["apikey"] = metaAPIKey
+    
+    let metascanConfig = NSURLSessionConfiguration.defaultSessionConfiguration()
+    metascanConfig.HTTPAdditionalHeaders = metascanHeaders
+    
+    let metascanManager = Alamofire.Manager(configuration: metascanConfig)
+    
+    var escapedURL = escapeURL(url)
+    var metascanURL = "https://ipscan.metascan-online.com/v1/scan/\(escapedURL)"
+    
+    metascanManager.request(.GET, metascanURL)
+        .responseJSON { (request, response, string, error) in
+            resultContainer.meta.responseCode = response!.statusCode
+            
+            let jsonObj = JSON(string!)
+            resultContainer.meta.positives = jsonObj["detected_by"].intValue
+            
             NSNotificationCenter.defaultCenter().postNotificationName("responseReceived", object: nil)
     }
 }

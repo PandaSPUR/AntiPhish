@@ -12,9 +12,11 @@ import SwiftyJSON
 private let _ScanResultsSharedInstance = ScanResults()
 
 class ScanResults {
+    var check = checkResult()
     var longurl = longurlResult()
     var google = googleResult()
     var vt = virustotalResult()
+    var meta = metascanResult()
     
     class var sharedInstance : ScanResults {
         return _ScanResultsSharedInstance
@@ -24,7 +26,12 @@ class ScanResults {
         longurl = longurlResult()
         google = googleResult()
         vt = virustotalResult()
+        meta = metascanResult()
     }
+}
+
+struct checkResult {
+    var alive = false
 }
 
 struct longurlResult {
@@ -52,5 +59,6 @@ struct virustotalResult {
 }
 
 struct metascanResult {
-    
+    var responseCode = 0
+    var positives = 0 //"positives" = how many scanners had a hit.
 }
