@@ -1,6 +1,11 @@
 AntiPhish
 A URL scanner which expands shortened links and scans the destination using publicly available APIs.
 
+(Note: Excuse the commit comments.. things got frustrating)
+
+Presentation:
+https://docs.google.com/presentation/d/1qbq7cCFws9ESQV5Tfca6pPbZw8fmGsnc_JRBFeNQ7Nw/edit?usp=sharing
+
 Resources used:
 - Google Safe Browsing API
 - VirusTotal API
